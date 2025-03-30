@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DevTech Academy - Gerenciamento de Alunos</title>
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+  <form id="formAluno">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite o nome" required><br><br>
+    
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Digite a idade" required><br><br>
+    
+    <label for="curso">Curso:</label>
+    <select id="curso">
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+    </select><br><br>
+    
+    <label for="notaFinal">Nota Final:</label>
+    <input type="number" id="notaFinal" placeholder="Digite a nota final" required><br><br>
+    
+    <button id="btnCadastrar" type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Lista de Alunos</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Curso</th>
+        <th>Nota Final</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaAlunos">
+      <!-- As linhas serão inseridas dinamicamente -->
+    </tbody>
+  </table>
+
+  <h2>Relatórios</h2>
+  <button id="btnRelatorioAprovados">Alunos Aprovados</button>
+  <button id="btnMediaNotas">Média das Notas</button>
+  <button id="btnMediaIdades">Média das Idades</button>
+  <button id="btnOrdemAlfabetica">Ordem Alfabética</button>
+  <button id="btnContagemCursos">Contagem por Curso</button>
+  <div id="relatorios"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
